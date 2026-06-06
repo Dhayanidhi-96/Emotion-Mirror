@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "emotion-mirror"
+version = "0.1.0"
+description = "A real-time webcam facial emotion detection application"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fer>=22.5.1",
+    "opencv-python>=4.9.0",
+    "numpy>=1.26.0",
+    "tensorflow>=2.15.0",
+    "setuptools<70",  # required for pkg_resources used by fer
+]
